@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Add a New Recipe</h1>
+
+  <form action="/recipes" method="POST">
+    <label for="title">Recipe Title</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="ingredients">Ingredients</label>
+    <textarea id="ingredients" name="ingredients" required></textarea>
+
+    <label for="instructions">Instructions</label>
+    <textarea id="instructions" name="instructions" required></textarea>
+
+    <label for="cookTime">Cook Time in Minutes</label>
+    <input type="number" id="cookTime" name="cookTime" min="1" required>
+
+    <label for="difficulty">Difficulty</label>
+    <select id="difficulty" name="difficulty" required>
+      <option value="">Select difficulty</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+
+    <label for="category">Category</label>
+    <input type="text" id="category" name="category" placeholder="Dinner, Dessert, Breakfast..." required>
+
+    <button type="submit">Save Recipe</button>
+  </form>
+
+  <a href="/recipes">View All Recipes</a>
+</body>
+</html>
