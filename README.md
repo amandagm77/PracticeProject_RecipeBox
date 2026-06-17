@@ -6,11 +6,11 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
 ![Mongoose](https://img.shields.io/badge/Mongoose-ODM-red)
 
-# 🍽️ RecipeBox
+# 🍽️ Recipe Box
 
 ## 📌 Description
 
-RecipeBox is a full-stack CRUD web application built with Node.js, Express, MongoDB Atlas, and Mongoose. Users can create, view, update, and delete recipes through a clean, responsive interface. The application demonstrates server-side rendering, database integration, form handling, and deployment-ready architecture.
+Recipe Box is a full-stack CRUD web application built with Node.js, Express, MongoDB Atlas, and Mongoose. Users can create, view, update, and delete recipes through a clean, responsive interface. The application demonstrates server-side rendering, database integration, form handling, and deployment-ready architecture.
 
 ---
 
