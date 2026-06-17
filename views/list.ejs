@@ -25,6 +25,10 @@
 
         <h3>Instructions</h3>
         <p><%= recipe.instructions %></p>
+        <div class="card-actions">
+            <a class="btn" href="/recipes/<%= recipe._id %>/edit">Edit</a>
+            <a class="btn danger" href="/recipes/<%= recipe._id %>/delete">Delete</a>
+        </div>
       </div>
     <% }) %>
   <% } %>

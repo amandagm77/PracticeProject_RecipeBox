@@ -41,3 +41,77 @@ button {
   margin: 20px 0;
   border-radius: 8px;
 }
+
+a {
+  color: #6b3f24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.home-container,
+.success-container,
+.delete-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.home-actions,
+.card-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8b5e34;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #6b3f24;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background-color: #4f6f52;
+}
+
+.btn.secondary:hover {
+  background-color: #3d5540;
+}
+
+.btn.danger {
+  background-color: #a94442;
+}
+
+.btn.danger:hover {
+  background-color: #843534;
+}
+
+.danger-button {
+  background-color: #a94442;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.danger-button:hover {
+  background-color: #843534;
+}
