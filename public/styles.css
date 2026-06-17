@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
 body {
   font-family: Arial, sans-serif;
   max-width: 800px;
@@ -7,7 +9,11 @@ body {
 }
 
 h1 {
+  font-family: "Birthstone", cursive;
+  font-size: 4rem;
   text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 form {
@@ -66,6 +72,14 @@ a:hover {
   line-height: 1.6;
 }
 
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
 .home-actions,
 .card-actions {
   display: flex;
@@ -76,11 +90,14 @@ a:hover {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
+  text-align: center;
   background-color: #8b5e34;
   color: white;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -114,4 +131,38 @@ a:hover {
 
 .danger-button:hover {
   background-color: #843534;
+}
+
+.form-link-button {
+  display: block;
+  text-align: center;
+  background-color: #54a4c9;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.form-link-button:hover {
+  background-color: #386e86;
+  text-decoration: none;
+}
+
+.danger-button,
+.form-link-button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.danger-button {
+  margin-bottom: 10px;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #666;
 }

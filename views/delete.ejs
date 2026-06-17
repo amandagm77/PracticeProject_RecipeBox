@@ -19,10 +19,14 @@
     </div>
 
     <form action="/recipes/<%= recipe._id %>/delete" method="POST">
-      <button class="danger-button" type="submit">Yes, Delete Recipe</button>
-    </form>
+      <button class="danger-button" type="submit">
+        Yes, Delete Recipe
+      </button>
 
-    <a href="/recipes">Cancel</a>
+      <a class="form-link-button" href="/recipes">
+        Cancel
+      </a>
+    </form>
   </main>
 </body>
 </html>
