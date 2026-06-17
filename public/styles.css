@@ -1,11 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/images/recipebox_kitchenbackground.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body > * {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f8f5f0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -14,15 +35,32 @@ h1 {
   text-align: center;
   font-weight: normal;
   margin-bottom: 20px;
+  color: #6b3f24;
+}
+
+.page-title {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 15px 25px;
+  border-radius: 10px;
+
+  width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+form,
+.recipe-card,
+.home-container,
+.success-container,
+.delete-container {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 input,
@@ -42,10 +80,7 @@ button {
 }
 
 .recipe-card {
-  background: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
+  margin: 20px auto;
 }
 
 a {
@@ -61,23 +96,12 @@ a:hover {
 .home-container,
 .success-container,
 .delete-container {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
   text-align: center;
 }
 
 .intro {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-
-.home-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 300px;
-  margin: 30px auto;
 }
 
 .home-actions,
@@ -87,6 +111,12 @@ a:hover {
   justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+
+.home-actions {
+  flex-direction: column;
+  max-width: 300px;
+  margin: 30px auto;
 }
 
 .btn {
@@ -107,30 +137,32 @@ a:hover {
 
 .btn.secondary {
   background-color: #4f6f52;
+  border: 1px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn.secondary:hover {
   background-color: #3d5540;
+  border: 1px solid rgb(204, 203, 203);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn.danger {
+.btn.danger,
+.danger-button {
   background-color: #a94442;
 }
 
-.btn.danger:hover {
+.btn.danger:hover,
+.danger-button:hover {
   background-color: #843534;
 }
 
 .danger-button {
-  background-color: #a94442;
   color: white;
   border: none;
   border-radius: 6px;
-  margin: 20px 0;
-}
-
-.danger-button:hover {
-  background-color: #843534;
+  margin: 20px 0 10px;
+  width: 100%;
 }
 
 .form-link-button {
@@ -143,6 +175,7 @@ a:hover {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 5px;
+  width: 100%;
 }
 
 .form-link-button:hover {
@@ -150,19 +183,9 @@ a:hover {
   text-decoration: none;
 }
 
-.danger-button,
-.form-link-button {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.danger-button {
-  margin-bottom: 10px;
-}
-
 .empty-message {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 30px;
-  color: #666;
+  color: white;
 }
