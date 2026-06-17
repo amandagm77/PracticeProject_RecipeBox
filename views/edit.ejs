@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <h1>Edit Recipe</h1>
+  <h1 class="page-title">Edit Recipe</h1>
 
   <form action="/recipes/<%= recipe._id %>/edit" method="POST">
     <label for="title">Recipe Title</label>
@@ -31,7 +31,7 @@
     <label for="category">Category</label>
     <input type="text" id="category" name="category" value="<%= recipe.category %>" required>
 
-    <button type="submit">Update Recipe</button>
+    <button class="primary-button" type="submit">Update Recipe</button>
 
     <a class="form-link-button" href="/recipes">Cancel</a>
   </form>
