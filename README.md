@@ -233,7 +233,7 @@ PracticeProject_RecipeBox/
 
 ## 🌐 Live Demo
 
-Deployment link will be added after deployment.
+[View Recipe Box Live](https://practiceproject-recipebox.onrender.com/)
 
 ---
 
